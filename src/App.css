@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container-lg {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.league-card-shadow {
+  box-shadow: 0px 5.214953422546387px 5.214953422546387px 0px #00000014;
+}
+
+.shadow-small {
+  box-shadow: 0px -3px 12px 0px #23004C0D;
+}
+.card-shadow-sm {
+  box-shadow: 0px 14.545455932617188px 50.90909194946289px -14.545455932617188px rgba(0, 0, 0, 0.1);
+}
+
+.card-shadow-lg {
+  box-shadow: 0px 10px 35px -10px rgba(0, 0, 0, 0.1);
+}
+
+.card-shadow-xl {
+  box-shadow: 10px 10px 35px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select-wrapper {
+  position: relative;
+}
+
+.custom-select-wrapper select {
+  cursor: pointer;
+  appearance: none;
+}
+
+.custom-select-wrapper::after {
+  content: url('./assets/svg/arrow.svg');
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  rotate: -90deg;
+  right: -4px;
+  cursor: pointer;
+}
+
+
+.custom-select-wrapper2 {
+  position: relative;
+}
+
+.custom-select-wrapper2 select {
+  cursor: pointer;
+  appearance: none;
+}
+
+.custom-select-wrapper2::after {
+  content: url('./assets/svg/arrow-black.svg');
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 18.5px;
+  top: 14px;
+  left: auto;
+  cursor: pointer;
+}
+
+
+#bannerSection {
+  height: 225px; 
+  transition: height 0.5s ease;
+}
+
+#bannerSection.shrink {
+  height: 86px; 
+  background-image: none;
+  background-color: #010040;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#bannerSection.team-shrink {
+  height: 86px; 
+  background-image: none;
+  background-color: #D81F21;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 10px solid #FFE802 ;
+  border-radius: 0px !important;
+  padding-block: 15px !important;
+}
+
+#bannerSection.event-detail-shrink {
+  height: 86px; 
+  background-image: none;
+  background-color: #D81F21;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 10px solid #00957F ;
+  border-radius: 0px !important;
+  padding-block: 15px !important;
+}
+
+.logoBox {
+  transition: opacity 0.5s ease, visibility 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.logoBox.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.title {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  margin-top: 0px !important;
+}
+.subTitle {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 0px !important;
+}
+
+@media screen and (max-width: 768px){
+  .custom-select-wrapper2::after {
+    left: 37px;
+    right: auto;
+  }
+
+  .custom-select-wrapper::after {
+    width: 16px;
+    height: 16px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 768px){
+  #bannerSection {
+    height: 300px; 
+    transition: height 0.5s ease;
   }
 }
