@@ -22,6 +22,7 @@ import person from '../assets/svg/person.svg';
 import backArrow from '../assets/svg/back-arrow.svg';
 import home from '../assets/svg/home.svg';
 import { Link } from "react-router-dom";
+import stakeShirtPng from '../assets/png/stake-shirt.png';
 
 function Tournament() {
   return (
@@ -71,312 +72,314 @@ function Tournament() {
         </div>
     </div>
     {/* <!-- Content  2 --/> */}
-    <div className="w-full container-lg pb-20 bg-neutral-100">
-        <div
-            className="flex items-center justify-center flex-wrap gap-5 pb-5 md:pb-[20px] no-scrollbar px-4 pt-5 md:pt-[60px] md:px-[112px]">
-            <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
-                <img src={cardBanner1} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
-                <div
-                    className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+    <div className='bg-neutral-100'>
+        <div className="w-full container-lg pb-20">
+            <div
+                className="flex items-center justify-center flex-wrap gap-5 pb-5 md:pb-[20px] no-scrollbar px-4 pt-5 md:pt-[60px] md:px-[112px]">
+                <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
+                    <img src={cardBanner1} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
                     <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px]  bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
-                            alt="image"/>
+                        className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px]  bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
+                                alt="image"/>
+                        </div>
+                        <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5]  shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={stakeShirtPng} className="w-full h-full" alt="image"/>
+                        </div>
                     </div>
-                    <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5]  shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={infiniteShirtPng} className="w-full h-full mt-3.5" alt="image"/>
+                    <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                        <div
+                            className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
+                            Premier
+                            League</div>
+                        <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
+                            Liverpool
+                            vs Man City</h3>
+                        <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
+                            <img src={location} className="w-4 h-4" alt="location icon"/>
+                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
+                                Stadium</p>
+                        </div>
+                        <div className="flex items-center gap-[19px]">
+                            <div className="flex gap-1 items-center">
+                                <img src={calendar} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
+                                    07 Dec</p>
+                            </div>
+                            <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
+                            <div className="flex gap-1 items-center">
+                                <img src={clock} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
+                                    PM ko</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
+                            <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
+                                <span className="text-[10px] text-[#201E1E99] md:hidden">
+                                    per person</span>
+                            </h4>
+                            <button
+                                className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
+                        </div>
                     </div>
                 </div>
-                <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
+                    <img src={cardBanner1} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
                     <div
-                        className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
-                        Premier
-                        League</div>
-                    <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
-                        Liverpool
-                        vs Man City</h3>
-                    <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
-                        <img src={location} className="w-4 h-4" alt="location icon"/>
-                        <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
-                            Stadium</p>
-                    </div>
-                    <div className="flex items-center gap-[19px]">
-                        <div className="flex gap-1 items-center">
-                            <img src={calendar} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
-                                07 Dec</p>
+                        className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2]  shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
+                                alt="image"/>
                         </div>
-                        <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
-                        <div className="flex gap-1 items-center">
-                            <img src={clock} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
-                                PM ko</p>
+                        <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px]  bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={stakeShirtPng} className="w-full h-full" alt="image"/>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
-                        <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
-                            <span className="text-[10px] text-[#201E1E99] md:hidden">
-                                per person</span>
-                        </h4>
-                        <button
-                            className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
+                    <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                        <div
+                            className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
+                            Premier
+                            League</div>
+                        <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
+                            Liverpool
+                            vs Man City</h3>
+                        <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
+                            <img src={location} className="w-4 h-4" alt="location icon"/>
+                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
+                                Stadium</p>
+                        </div>
+                        <div className="flex items-center gap-[19px]">
+                            <div className="flex gap-1 items-center">
+                                <img src={calendar} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
+                                    07 Dec</p>
+                            </div>
+                            <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
+                            <div className="flex gap-1 items-center">
+                                <img src={clock} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
+                                    PM ko</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
+                            <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
+                                <span className="text-[10px] text-[#201E1E99] md:hidden">
+                                    per person</span>
+                            </h4>
+                            <button
+                                className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
-                <img src={cardBanner1} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
-                <div
-                    className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
+                    <img src={cardBanner3} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
                     <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2]  shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
-                            alt="image"/>
+                        className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
+                                alt="image"/>
+                        </div>
+                        <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={stakeShirtPng} className="w-full h-full" alt="image"/>
+                        </div>
                     </div>
-                    <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px]  bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={infiniteShirtPng} className="w-full h-full mt-3.5" alt="image"/>
+                    <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                        <div
+                            className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
+                            Premier
+                            League</div>
+                        <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
+                            Liverpool
+                            vs Man City</h3>
+                        <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
+                            <img src={location} className="w-4 h-4" alt="location icon"/>
+                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
+                                Stadium</p>
+                        </div>
+                        <div className="flex items-center gap-[19px]">
+                            <div className="flex gap-1 items-center">
+                                <img src={calendar} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
+                                    07 Dec</p>
+                            </div>
+                            <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
+                            <div className="flex gap-1 items-center">
+                                <img src={clock} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
+                                    PM ko</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
+                            <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
+                                <span className="text-[10px] text-[#201E1E99] md:hidden">
+                                    per person</span>
+                            </h4>
+                            <button
+                                className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
+                        </div>
                     </div>
                 </div>
-                <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
+                    <img src={cardBanner3} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
                     <div
-                        className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
-                        Premier
-                        League</div>
-                    <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
-                        Liverpool
-                        vs Man City</h3>
-                    <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
-                        <img src={location} className="w-4 h-4" alt="location icon"/>
-                        <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
-                            Stadium</p>
-                    </div>
-                    <div className="flex items-center gap-[19px]">
-                        <div className="flex gap-1 items-center">
-                            <img src={calendar} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
-                                07 Dec</p>
+                        className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
+                                alt="image"/>
                         </div>
-                        <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
-                        <div className="flex gap-1 items-center">
-                            <img src={clock} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
-                                PM ko</p>
+                        <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={stakeShirtPng} className="w-full h-full" alt="image"/>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
-                        <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
-                            <span className="text-[10px] text-[#201E1E99] md:hidden">
-                                per person</span>
-                        </h4>
-                        <button
-                            className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
+                    <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                        <div
+                            className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
+                            Premier
+                            League</div>
+                        <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
+                            Liverpool
+                            vs Man City</h3>
+                        <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
+                            <img src={location} className="w-4 h-4" alt="location icon"/>
+                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
+                                Stadium</p>
+                        </div>
+                        <div className="flex items-center gap-[19px]">
+                            <div className="flex gap-1 items-center">
+                                <img src={calendar} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
+                                    07 Dec</p>
+                            </div>
+                            <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
+                            <div className="flex gap-1 items-center">
+                                <img src={clock} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
+                                    PM ko</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
+                            <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
+                                <span className="text-[10px] text-[#201E1E99] md:hidden">
+                                    per person</span>
+                            </h4>
+                            <button
+                                className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
-                <img src={cardBanner3} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
-                <div
-                    className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
+                    <img src={cardBanner4} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
                     <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
-                            alt="image"/>
+                        className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
+                                alt="image"/>
+                        </div>
+                        <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={stakeShirtPng} className="w-full h-full" alt="image"/>
+                        </div>
                     </div>
-                    <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={infiniteShirtPng} className="w-full h-full mt-3.5" alt="image"/>
+                    <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                        <div
+                            className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
+                            Premier
+                            League</div>
+                        <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
+                            Liverpool
+                            vs Man City</h3>
+                        <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
+                            <img src={location} className="w-4 h-4" alt="location icon"/>
+                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
+                                Stadium</p>
+                        </div>
+                        <div className="flex items-center gap-[19px]">
+                            <div className="flex gap-1 items-center">
+                                <img src={calendar} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
+                                    07 Dec</p>
+                            </div>
+                            <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
+                            <div className="flex gap-1 items-center">
+                                <img src={clock} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
+                                    PM ko</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
+                            <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
+                                <span className="text-[10px] text-[#201E1E99] md:hidden">
+                                    per person</span>
+                            </h4>
+                            <button
+                                className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
+                        </div>
                     </div>
                 </div>
-                <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
+                    <img src={cardBanner3} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
                     <div
-                        className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
-                        Premier
-                        League</div>
-                    <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
-                        Liverpool
-                        vs Man City</h3>
-                    <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
-                        <img src={location} className="w-4 h-4" alt="location icon"/>
-                        <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
-                            Stadium</p>
-                    </div>
-                    <div className="flex items-center gap-[19px]">
-                        <div className="flex gap-1 items-center">
-                            <img src={calendar} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
-                                07 Dec</p>
+                        className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
+                                alt="image"/>
                         </div>
-                        <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
-                        <div className="flex gap-1 items-center">
-                            <img src={clock} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
-                                PM ko</p>
+                        <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
+                        <div
+                            className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
+                            <img src={stakeShirtPng} className="w-full h-full" alt="image"/>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
-                        <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
-                            <span className="text-[10px] text-[#201E1E99] md:hidden">
-                                per person</span>
-                        </h4>
-                        <button
-                            className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
-                    </div>
-                </div>
-            </div>
-            <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
-                <img src={cardBanner3} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
-                <div
-                    className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
-                            alt="image"/>
-                    </div>
-                    <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={infiniteShirtPng} className="w-full h-full mt-3.5" alt="image"/>
-                    </div>
-                </div>
-                <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
-                    <div
-                        className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
-                        Premier
-                        League</div>
-                    <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
-                        Liverpool
-                        vs Man City</h3>
-                    <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
-                        <img src={location} className="w-4 h-4" alt="location icon"/>
-                        <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
-                            Stadium</p>
-                    </div>
-                    <div className="flex items-center gap-[19px]">
-                        <div className="flex gap-1 items-center">
-                            <img src={calendar} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
-                                07 Dec</p>
+                    <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
+                        <div
+                            className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
+                            Premier
+                            League</div>
+                        <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
+                            Liverpool
+                            vs Man City</h3>
+                        <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
+                            <img src={location} className="w-4 h-4" alt="location icon"/>
+                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
+                                Stadium</p>
                         </div>
-                        <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
-                        <div className="flex gap-1 items-center">
-                            <img src={clock} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
-                                PM ko</p>
+                        <div className="flex items-center gap-[19px]">
+                            <div className="flex gap-1 items-center">
+                                <img src={calendar} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
+                                    07 Dec</p>
+                            </div>
+                            <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
+                            <div className="flex gap-1 items-center">
+                                <img src={clock} className="w-4 h-4" alt="location icon"/>
+                                <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
+                                    PM ko</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
-                        <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
-                            <span className="text-[10px] text-[#201E1E99] md:hidden">
-                                per person</span>
-                        </h4>
-                        <button
-                            className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
-                    </div>
-                </div>
-            </div>
-            <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
-                <img src={cardBanner4} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
-                <div
-                    className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
-                            alt="image"/>
-                    </div>
-                    <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={infiniteShirtPng} className="w-full h-full mt-3.5" alt="image"/>
-                    </div>
-                </div>
-                <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
-                    <div
-                        className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
-                        Premier
-                        League</div>
-                    <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
-                        Liverpool
-                        vs Man City</h3>
-                    <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
-                        <img src={location} className="w-4 h-4" alt="location icon"/>
-                        <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
-                            Stadium</p>
-                    </div>
-                    <div className="flex items-center gap-[19px]">
-                        <div className="flex gap-1 items-center">
-                            <img src={calendar} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
-                                07 Dec</p>
+                        <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
+                            <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
+                                <span className="text-[10px] text-[#201E1E99] md:hidden">
+                                    per person</span>
+                            </h4>
+                            <button
+                                className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
                         </div>
-                        <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
-                        <div className="flex gap-1 items-center">
-                            <img src={clock} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
-                                PM ko</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
-                        <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
-                            <span className="text-[10px] text-[#201E1E99] md:hidden">
-                                per person</span>
-                        </h4>
-                        <button
-                            className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
-                    </div>
-                </div>
-            </div>
-            <div className="relative w-[343px] md:w-[392px] md:h-[375px] h-[330px]  rounded-[20px] card-shadow-lg shrink-0">
-                <img src={cardBanner3} className="w-full h-[90px] md:h-[130px]" alt="banner"/>
-                <div
-                    className="flex gap-1.5 items-end md:items-center absolute top-[43px] md:top-[67px] left-3 md:left-[18px]">
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#FFE0E2] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={manchesterUnitedPng} className="w-full h-full mt-3 object-contain"
-                            alt="image"/>
-                    </div>
-                    <p className="text-sm md:text-base max-md:mb-0.5 md:text-white">vs</p>
-                    <div
-                        className="w-[70px] md:w-[80px] h-[70px] md:h-[80px] bg-[#E2E4F5] shrink-0 rounded-full border-[3px] md:border-4 border-white overflow-hidden">
-                        <img src={infiniteShirtPng} className="w-full h-full mt-3.5" alt="image"/>
-                    </div>
-                </div>
-                <div className="px-3 md:px-5 pt-[40px] md:pt-[37px] md:pb-[18px]">
-                    <div
-                        className="px-2.5 py-[4.5px] rounded-full bg-[#4267B3] bg-opacity-10 text-[#4267B3] text-[10px] leading-[15px] md:leading-[18px] md:text-xs w-fit">
-                        Premier
-                        League</div>
-                    <h3 className="text-base md:text-xl font-semibold mt-[5px] md:mt-2 leading-[24px] md:leading-[30px]">
-                        Liverpool
-                        vs Man City</h3>
-                    <div className="flex gap-2.5 items-center my-[15px] md:my-[15px]">
-                        <img src={location} className="w-4 h-4" alt="location icon"/>
-                        <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Anfield
-                            Stadium</p>
-                    </div>
-                    <div className="flex items-center gap-[19px]">
-                        <div className="flex gap-1 items-center">
-                            <img src={calendar} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">Thu
-                                07 Dec</p>
-                        </div>
-                        <span className="w-[1px] h-3 bg-[#4267B366] rounded-"></span>
-                        <div className="flex gap-1 items-center">
-                            <img src={clock} className="w-4 h-4" alt="location icon"/>
-                            <p className="text-[10px] md:text-xs leading-[15px] md:leading-[18px] text-[#201E1ECC]">8:15
-                                PM ko</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-between mt-[30px] md:mt-5 gap-4">
-                        <h4 className="text-base leading-[24px] md:text-xl md:leading-[30px] font-semibold">$399
-                            <span className="text-[10px] text-[#201E1E99] md:hidden">
-                                per person</span>
-                        </h4>
-                        <button
-                            className="bg-[#E82F24] text-sm text-white h-[35px] md:h-[38px] w-[98px] border border-[#E82F24] font-semibold rounded-full">Book</button>
                     </div>
                 </div>
             </div>

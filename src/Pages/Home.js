@@ -525,63 +525,6 @@ function Home() {
             <a className="flex items-center gap-[5px] md:gap-2.5 text-xs md:text-base leading-[18px] md:leading-[24px] font-medium text-[#201E1ECC]" href="all-team">View all <img src={arrow} className="rotate-180 w-4 h-4 md:w-5 md:h-5" alt="arrow"/></a>
         </div>
         <AllTeamsCarousel />
-        <div className="carousel-container container-lg md:px-[52px] bg-neutral-100 flex gap-5" data-gap="20">
-            <div className="leftBtn mt-[63px] max-md:hidden w-10 h-10 flex items-center justify-center shrink-0 border border-[#201E1E] border-opacity-[20%] rounded-full cursor-pointer">
-            <img src={arrow} className="w-5 h-5" alt="arrow"/></div>
-            <div className="overflow-auto no-scrollbar md:overflow-hidden">
-                <div className="carousel max-md:px-4 flex items-center gap-5 pb-5 md:pb-[60px] transition-transform duration-700 ease-in-out">
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#FAE5EA] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#FFFFFF4D] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={standardShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] max-md:-mt-1.5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">Liverpool</div>
-                    </div>
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#0017BB36] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#FFFFFF4D] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={chelseaShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] max-md:-mt-1.5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">Chelsea</div>
-                    </div>
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#1341731A] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#FFFFFF4D] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={englandShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] max-md:-mt-1.5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">England</div>
-                    </div>
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#1341731A] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#1B2F4A1A] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={huskyShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] -mt-1.5 md:-mt-5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">Millwall</div>
-                    </div>
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#CAEDFF] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#6AB4DB4D] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={unibetShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] -mt-1.5 md:-mt-5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">Liverpool</div>
-                    </div>
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#FAE5EA] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#FFFFFF4D] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={standardShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] max-md:-mt-1.5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">Liverpool</div>
-                    </div>
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#CAEDFF] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#6AB4DB4D] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={unibetShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] -mt-1.5 md:-mt-5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">Liverpool</div>
-                    </div>
-                    <div className="relative overflow-hidden card-shadow-sm w-[144px] md:w-[186px] h-[136px] md:h-[176px] shrink-0 bg-[#FAE5EA] rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <div className="bg-[#FFFFFF4D] rounded-full w-[130px] h-[130px] md:w-[168.34px] md:h-[168.34px] flex justify-center items-center md:mt-2">
-                            <img src={standardShirt} className="w-[110px] md:w-[130px] h-[110px] md:h-[130px] max-md:-mt-1.5" alt="logo"/>
-                        </div>
-                        <div className="bg-white w-full text-xs md:text-base h-9 md:h-[46.59px] text-[#201E1ECC] font-medium flex justify-center items-center absolute bottom-0 left-0">Liverpool</div>
-                    </div>
-                </div>
-            </div>
-            <div className="rightBtn mt-[63px] max-md:hidden w-10 h-10 rotate-180 flex items-center justify-center shrink-0 border border-[#201E1E] border-opacity-[20%] rounded-full cursor-pointer"><img src={arrow} className="w-5 h-5" alt="arrow"/></div>
-        </div>
         <div className="container-lg flex items-center justify-between gap-4 mb-[15px] md:mb-5 px-4 md:px-[112px]">
             <h2 className="text-xl md:text-[30px] leading-[30px] md:leading-[50px] font-semibold">Popular</h2>
             <a className="flex items-center gap-[5px] md:gap-2.5 text-xs md:text-base leading-[18px] md:leading-[24px] font-medium text-[#201E1ECC]" href="all-tournaments">View all <img src={arrow} className="rotate-180 w-4 h-4 md:w-5 md:h-5" alt="arrow"/></a>
