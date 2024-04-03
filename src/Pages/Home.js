@@ -7,18 +7,10 @@ import search from '../assets/svg/search.svg';
 import trolly from '../assets/svg/trolly.svg';
 import chelseaShirt from '../assets/svg/chelsea-shirt.svg';
 import standardShirt from '../assets/svg/standard-shirt.svg';
-import stakeShirt from '../assets/svg/stake-shirt.svg';
 import stakeShirtPng from '../assets/png/stake-shirt.png';
 import manchesterUnitedPng from '../assets/png/manchester-united.png';
 import infiniteShirtPng from '../assets/png/infinite-shirt.png';
-import etihadShirt from '../assets/svg/etihad-shirt.svg';
 import englandShirt from '../assets/svg/england-shirt.svg';
-import championsLogo from '../assets/svg/champions-logo.svg';
-import laliga from '../assets/svg/laliga.svg';
-import bundesLogo from '../assets/svg/bundes-logo.svg';
-import euroLogo from '../assets/svg/euro-logo.svg';
-import qualifiresLogo from '../assets/svg/qualifires-logo.svg';
-import liberLogo from '../assets/svg/liber-logo.svg';
 import location from '../assets/svg/location.svg';
 import calendar from '../assets/svg/calendar.svg';
 import clock from '../assets/svg/clock.svg';
@@ -41,6 +33,7 @@ import person from '../assets/svg/person.svg';
 import TeamsCarousel from '../components/TeamsCarousel';
 import AllTeamsCarousel from '../components/AllTeamsCarousel';
 import PopularTeamsCarousel from '../components/PopularTeamsCarousel';
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -51,9 +44,9 @@ function Home() {
             <div className="flex gap-[30px]">
                 <div className="gap-10 hidden md:flex">
                     <ul className="flex gap-5 lg:gap-10 items-center text-sm">
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/all-team">Teams</a></li>
-                        <li><a href="/all-tournaments">Tournament</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/all-teams">Teams</Link></li>
+                        <li><Link to="/all-tournaments">Tournament</Link></li>
                     </ul>
                     <div className="flex gap-5">
                         <button className="bg-white text-sm text-[#E82F24] h-10 w-[130px] border border-[#E82F24] font-semibold rounded-full">Login</button>
@@ -594,44 +587,6 @@ function Home() {
             <a className="flex items-center gap-[5px] md:gap-2.5 text-xs md:text-base leading-[18px] md:leading-[24px] font-medium text-[#201E1ECC]" href="all-tournaments">View all <img src={arrow} className="rotate-180 w-4 h-4 md:w-5 md:h-5" alt="arrow"/></a>
         </div>
         <PopularTeamsCarousel />
-        {/* <div className="carousel-container container-lg md:px-[52px] bg-neutral-100 flex gap-2.5 md:gap-5" data-gap="20">
-            <div className="leftBtn mt-[63px] max-md:hidden w-10 h-10 flex items-center justify-center shrink-0 border border-[#201E1E] border-opacity-[20%] rounded-full cursor-pointer"><img src={arrow} className="w-5 h-5" alt="arrow"/></div>
-            <div className="overflow-auto no-scrollbar md:overflow-hidden">
-                <div className="carousel max-md:px-4 flex items-center gap-5 pb-5 md:pb-[60px] transition-transform duration-700 ease-in-out">
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={championsLogo} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={laliga} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={bundesLogo} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={euroLogo} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={qualifiresLogo} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={liberLogo} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={championsLogo} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={laliga} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={championsLogo} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                    <div className="card-shadow-sm w-[130px] md:w-[186px] h-[110px] md:h-[166px] shrink-0 bg-white rounded-[20px] md:rounded-[29px] flex justify-center items-center">
-                        <img src={laliga} className="w-[75px] md:w-[98px] h-[73px] md:h-[100px]" alt="logo"/>
-                    </div>
-                </div>
-            </div>
-            <div className="rightBtn mt-[63px] max-md:hidden w-10 h-10 rotate-180 flex items-center justify-center shrink-0 border border-[#201E1E] border-opacity-[20%] rounded-full cursor-pointer"><img src={arrow} className="w-5 h-5" alt="arrow"/></div>
-        </div> */}
         <div className="container-lg px-4 md:px-[112px]">
             <div className="bg-white lg:flex md:items-center px-[27.58px] lg:px-[70px] py-[30px] md:py-[51.5px] rounded-[20px]">
                 <div className="text-center lg:mr-[63px] lg:w-[262px] lg:px-3.5">
@@ -696,14 +651,14 @@ function Home() {
                     <img src={footerLogo} className="h-[39px] max-md:hidden" alt="logo"/>
                     <img src={blueLogo} className="h-[23px] w-[157px] md:hidden" alt="logo"/>
                     <div className="hidden md:flex items-center gap-10 text-[14px]">
-                        <a href="home" className="h-[24px]">Home</a>
-                        <a href="all-team" className="h-[24px]">Teams</a>
-                        <a href="all-tournaments" className="h-[24px]">Tournament</a>
+                        <Link to="/" className="h-[24px]">Home</Link>
+                        <Link to="/all-teams" className="h-[24px]">Teams</Link>
+                        <Link to="/all-tournaments" className="h-[24px]">Tournament</Link>
                     </div>
                     <div className="md:hidden flex justify-between gap-6 text-[12px] text-[#FFFFFFCC]">
-                        <a href="privacy" className="h-[18px]">Privacy Policy</a>
-                        <a href="terms&conditions" className="h-[18px]">Terms & Conditions</a>
-                        <a href="#" className="h-[18px]">Cookies Policy</a>
+                        <Link to="/privacy" className="h-[18px]">Privacy Policy</Link>
+                        <Link to="/terms-and-conditions" className="h-[18px]">Terms & Conditions</Link>
+                        <Link to="#" className="h-[18px]">Cookies Policy</Link>
                     </div>
                     <div className="hidden md:flex gap-4">
                         <div
@@ -731,9 +686,9 @@ function Home() {
                 <span className="text-[12px] text-[#FFFFFFCC]">© 2022
                     Stadiumz. All Rights Reserved.</span>
                 <div className="hidden md:flex justify-between gap-2 gap-[25px] text-[12px] font-medium text-[#FFFFFFCC]">
-                    <a href="privacy" className="h-[18px]">Privacy Policy</a>
-                    <a href="terms&conditions" className="h-[18px]">Terms & Conditions</a>
-                    <a href="#" className="h-[18px]">Cookies Policy</a>
+                    <Link to="/privacy" className="h-[18px]">Privacy Policy</Link>
+                    <Link to="/terms-and-conditions" className="h-[18px]">Terms & Conditions</Link>
+                    <Link to="#" className="h-[18px]">Cookies Policy</Link>
                 </div>
                 <div className="md:hidden flex gap-4">
                     <div
@@ -757,23 +712,23 @@ function Home() {
         </div>
     </div>
     <div className="md:hidden card-shadow-xl w-full fixed bottom-0 left-0 px-6 pt-[18px] pb-[15px] bg-white rounded-t-[30.5px] flex items-center justify-between gap-3">
-        <a href="home" className="relative text-[#4267B3] text-xs leading-3 text-center block w-fit">
+        <Link to="/" className="relative text-[#4267B3] text-xs leading-3 text-center block w-fit">
             <span className="w-[35px] h-1 rounded-b bg-[#4267B3] absolute -top-[18px] left-1/2 -translate-x-[50%]"></span>
             <img src={homeBlue} className="mx-auto mb-[5px]" alt="icon"/>
             Home
-        </a>
-        <a href="all-team" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
+        </Link>
+        <Link to="/all-teams" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
             <img src={teams} className="mx-auto mb-[5px]" alt="icon"/>
             Teams
-        </a>
-        <a href="all-tournaments" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
+        </Link>
+        <Link to="/all-tournaments" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
             <img src={award} className="mx-auto mb-[5px]" alt="icon"/>
             Tournament
-        </a>
-        <a href="my-account" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
+        </Link>
+        <Link to="/account" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
             <img src={person} className="mx-auto mb-[5px]" alt="icon"/>
             Account
-        </a>
+        </Link>
     </div>
     </div>
   )

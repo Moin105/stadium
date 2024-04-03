@@ -14,6 +14,7 @@ import home from '../assets/svg/home.svg';
 import teams from '../assets/svg/teams.svg';
 import award from '../assets/svg/award.svg';
 import person from '../assets/svg/person.svg';
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
@@ -24,9 +25,9 @@ function SignUp() {
             <div className="flex gap-[30px]">
                 <div className="gap-10 hidden md:flex">
                     <ul className="flex gap-5 lg:gap-10 items-center text-sm">
-                        <li><a href="home">Home</a></li>
-                        <li><a href="all-team">Teams</a></li>
-                        <li><a href="all-tournaments">Tournament</a></li>
+                        <Link to="/">Home</Link>
+                        <Link to="/all-teams">Teams</Link>
+                        <Link to="/all-tournaments">Tournament</Link>
                     </ul>
                     <div className="flex gap-5">
                         <button
@@ -141,14 +142,14 @@ function SignUp() {
                     <img src={footerLogo} className="h-[39px] max-md:hidden" alt="logo"/>
                     <img src={blueLogo} className="h-[23px] w-[157px] md:hidden" alt="logo"/>
                     <div className="hidden md:flex items-center gap-10 text-[14px]">
-                        <a href="home" className="h-[24px]">Home</a>
-                        <a href="all-team" className="h-[24px]">Teams</a>
-                        <a href="all-tournaments" className="h-[24px]">Tournament</a>
+                        <Link to="/" className="h-[24px]">Home</Link>
+                        <Link to="/all-teams" className="h-[24px]">Teams</Link>
+                        <Link to="/all-tournaments" className="h-[24px]">Tournament</Link>
                     </div>
                     <div className="md:hidden flex justify-between gap-2 gap-6 text-xstext-[#FFFFFFCC]">
-                        <a href="privacy" className="h-[18px]">Privacy Policy</a>
-                        <a href="terms&conditions" className="h-[18px]">Terms & Conditions</a>
-                        <a href="#" className="h-[18px]">Cookies Policy</a>
+                        <Link to="/privacy" className="h-[18px]">Privacy Policy</Link>
+                        <Link to="/terms-and-conditions" className="h-[18px]">Terms & Conditions</Link>
+                        <Link to="#" className="h-[18px]">Cookies Policy</Link>
                     </div>
                     <div className="hidden md:flex gap-4">
                         <div
@@ -176,9 +177,9 @@ function SignUp() {
                 <span className="text-xstext-[#FFFFFFCC]">© 2022
                     Stadiumz. All Rights Reserved.</span>
                 <div className="hidden md:flex justify-between gap-2 gap-[25px] text-xsfont-medium text-[#FFFFFFCC]">
-                    <a href="privacy" className="h-[18px]">Privacy Policy</a>
-                    <a href="terms&conditions" className="h-[18px]">Terms & Conditions</a>
-                    <a href="#" className="h-[18px]">Cookies Policy</a>
+                    <Link to="/privacy" className="h-[18px]">Privacy Policy</Link>
+                    <Link to="/terms-and-conditions" className="h-[18px]">Terms & Conditions</Link>
+                    <Link to="#" className="h-[18px]">Cookies Policy</Link>
                 </div>
                 <div className="md:hidden flex gap-4">
                     <div
@@ -202,22 +203,22 @@ function SignUp() {
         </div>
     </div>
     <div className="md:hidden card-shadow-xl w-full fixed bottom-0 left-0 px-6 pt-[18px] pb-[15px] bg-white rounded-t-[30.5px] flex items-center justify-between gap-3">
-        <a href="home" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
+        <Link to="/" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
             <img src={home} className="mx-auto mb-[5px]" alt="icon"/>
             Home
-        </a>
-        <a href="all-team" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
+        </Link>
+        <Link to="/all-teams" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
             <img src={teams} className="mx-auto mb-[5px]" alt="icon"/>
             Teams
-        </a>
-        <a href="all-tournaments" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
+        </Link>
+        <Link to="/all-tournaments" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
             <img src={award} className="mx-auto mb-[5px]" alt="icon"/>
             Tournament
-        </a>
-        <a href="my-account" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
+        </Link>
+        <Link to="/account" className="relative text-[#201E1E66] text-xs leading-3 text-center block w-fit">
             <img src={person} className="mx-auto mb-[5px]" alt="icon"/>
             Account
-        </a>
+        </Link>
     </div>
     </div>
   )

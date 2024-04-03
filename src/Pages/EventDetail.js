@@ -19,6 +19,7 @@ import link from '../assets/svg/link.svg';
 import whatsapp from '../assets/svg/whatsapp.svg';
 import stadium from '../assets/svg/stadium.svg';
 import backArrowWhite from '../assets/svg/back-arrow-white.svg';
+import { Link } from "react-router-dom";
 
 function EventDetail() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -50,9 +51,9 @@ function EventDetail() {
             <div className="flex gap-[30px]">
                 <div className="gap-10 hidden md:flex">
                     <ul className="flex gap-5 lg:gap-10 items-center text-sm">
-                        <li><a href="home">Home</a></li>
-                        <li><a href="all-team">Teams</a></li>
-                        <li><a href="all-tournaments">Tournament</a></li>
+                        <Link to="/">Home</Link>
+                        <Link to="/all-teams">Teams</Link>
+                        <Link to="/all-tournaments">Tournament</Link>
                     </ul>
                     <div className="flex gap-5">
                         <button className="bg-white text-sm text-[#E82F24] h-10 w-[130px] border border-[#E82F24] font-semibold rounded-full">Login</button>
@@ -280,14 +281,14 @@ function EventDetail() {
                     <img src={footerLogo} className="h-[39px] max-md:hidden" alt="logo" />
                     <img src={blueLogo} className="h-[23px] w-[157px] md:hidden" alt="logo" />
                     <div className="hidden md:flex items-center gap-10 text-[14px]">
-                        <a href="home" className="h-[24px]">Home</a>
-                        <a href="all-team" className="h-[24px]">Teams</a>
-                        <a href="all-tournaments" className="h-[24px]">Tournament</a>
+                        <Link to="/" className="h-[24px]">Home</Link>
+                        <Link to="/all-teams" className="h-[24px]">Teams</Link>
+                        <Link to="/all-tournaments" className="h-[24px]">Tournament</Link>
                     </div>
                     <div className="md:hidden flex justify-between gap-2 gap-6 text-[12px] text-[#FFFFFFCC]">
-                        <a href="privacy" className="h-[18px]">Privacy Policy</a>
-                        <a href="terms&conditions" className="h-[18px]">Terms & Conditions</a>
-                        <a href="#" className="h-[18px]">Cookies Policy</a>
+                        <Link to="/privacy" className="h-[18px]">Privacy Policy</Link>
+                        <Link to="/terms-and-conditions" className="h-[18px]">Terms & Conditions</Link>
+                        <Link to="#" className="h-[18px]">Cookies Policy</Link>
                     </div>
                     <div className="hidden md:flex gap-4">
                         <div
@@ -315,9 +316,9 @@ function EventDetail() {
                 <span className="text-[12px] text-[#FFFFFFCC]">© 2022
                     Stadiumz. All Rights Reserved.</span>
                 <div className="hidden md:flex justify-between gap-2 gap-[25px] text-[12px] font-medium text-[#FFFFFFCC]">
-                    <a href="privacy" className="h-[18px]">Privacy Policy</a>
-                    <a href="terms&conditions" className="h-[18px]">Terms & Conditions</a>
-                    <a href="#" className="h-[18px]">Cookies Policy</a>
+                    <Link to="/privacy" className="h-[18px]">Privacy Policy</Link>
+                    <Link to="/terms-and-conditions" className="h-[18px]">Terms & Conditions</Link>
+                    <Link to="#" className="h-[18px]">Cookies Policy</Link>
                 </div>
                 <div className="md:hidden flex gap-4">
                     <div
