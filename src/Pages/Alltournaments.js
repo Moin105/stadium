@@ -48,7 +48,7 @@ function Alltournaments() {
             <img src={search} className="w-5 h-5" alt="search"/>
         </div>
     </header>
-    <div className="max-md:hidden w-full flex justify-center items-center h-[330px] bg-[url(./assets/png/banner2.png)] bg-cover">
+    <div className="max-md:hidden w-full flex justify-center items-center h-[330px] bg-[url(./assets/png/banner2.webp)] bg-cover">
         <div className="w-full max-w-[500px] text-white text-center">
             <h1 className="text-[40px] font-semibold leading-[50px]">Tournaments</h1>
             <p className="leading-[26px] font-normal mt-1">Sed ut perspiciatis unde omnis iste natus eratusror Sed ut pers
