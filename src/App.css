@@ -17,6 +17,10 @@ body {
   scrollbar-width: none;
 }
 
+.last-border-none > :last-child {
+  border-bottom: none;
+}
+
 .container-lg {
   width: 100%;
   max-width: 1440px;
